@@ -1,61 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
 body {
-  color: #333333;
-  font-family: arial;
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 0 16px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  background:  rgba(174, 168, 211, 1);
+  font-family: 'Open Sans', sans-serif;
+}
+  
+.container {
+  max-width: 450px;
+
 }
 
-.main-content {
-  flex-grow: 1;
-  text-align: center;
+.card {
+  border: none;
+  
 }
 
-footer {
-  color: #888888;
-  border-top: 1px solid #eeeeee;
-  margin-top: 16px;
-  padding: 16px 0;
-  text-align: center;
+.card-header {
+  background: rgba(140, 20, 252, 1);
+  color: #fff;
 }
 
-header {
-  margin-top: 16px;
-  margin-bottom: 48px;
+.card-header h1 {
+  font-family: 'Courgette', cursive;
 }
 
-h1 {
-  font-size: 64px;
-  margin-bottom: 16px;
+.card-header p {
+  font-family: 'Open Sans', sans-serif;
 }
 
-header a {
-  color: #888888;
-  margin-right: 16px;
-  text-decoration: none;
+.card-body {
+  background: rgba(241, 231, 254, 1);
 }
 
-.portrait {
-  width: 250px;
-}
-
-input {
-  border: 1px solid #cccccc;
-  padding: 8px;
-}
-
-button {
-  cursor: pointer;
-  border: 1px solid #888888;
-  background: #888888;
-  color: white;
-  padding: 8px;
+.card-footer {
+  background: rgba(241, 231, 254, 1);
 }
 
 #icon {
   width: 200px;
+  fill:  orange;
 }
 
+#message-1 {
+  color: rgba(140, 20, 252, 1)
+}
+
+.btn {
+  background: rgba(140, 20, 252, 1);
+  color: #fff;
+  font-family: 'Courgette', cursive;
+}
+
+.btn:hover {
+  background: rgba(159, 90, 253, 1);
+  color: #fff;
+}
