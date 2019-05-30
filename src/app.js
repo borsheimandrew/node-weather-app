@@ -30,20 +30,20 @@ app.get('', (req, res) => {
   })
 })
 
-app.get('/about', (req, res) => {
-  res.render('about', {
-    title: 'About Me',
-    name: 'Andrew Borsheim'
-  })
-})
+// app.get('/about', (req, res) => {
+//   res.render('about', {
+//     title: 'About Me',
+//     name: 'Andrew Borsheim'
+//   })
+// })
 
-app.get('/help', (req, res) => {
-  res.render('help', {
-    message: 'reboot your computer',
-    title: 'Help',
-    name: 'Andrew Borsheim'
-  })
-})
+// app.get('/help', (req, res) => {
+//   res.render('help', {
+//     message: 'reboot your computer',
+//     title: 'Help',
+//     name: 'Andrew Borsheim'
+//   })
+// })
 
 app.get('/weather', (req, res) => {
   if (!req.query.address) {
@@ -71,13 +71,13 @@ app.get('/weather', (req, res) => {
   }
 })
 
-app.get('/help/*', (req, res) => {
-  res.render('404', {
-    title: '404',
-    name: 'Andrew Borsheim',
-    message: 'Help article not found'
-  })
-})
+// app.get('/help/*', (req, res) => {
+//   res.render('404', {
+//     title: '404',
+//     name: 'Andrew Borsheim',
+//     message: 'Help article not found'
+//   })
+// })
 
 app.get('*', (req, res) => {
   res.render('404', {
