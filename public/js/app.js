@@ -24,7 +24,6 @@ weatherForm.addEventListener('submit', (e) => {
       } else {
         messageError.textContent = ''
         icon.src = `/img/icons/${data.forecast.icon}.svg`
-        console.log(icon.src)
         messageOne.textContent = data.location
         messageTwo.textContent = `${data.forecast.summary}`
         messageThree.textContent = `It's currently ${Math.floor(data.forecast.currently)} degrees out with a ${data.forecast.rainChance}% chance of rain`
